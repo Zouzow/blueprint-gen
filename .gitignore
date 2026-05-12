@@ -1,0 +1,11 @@
+# Config
+config/database.php
+
+# Logs & Temps
+*.log
+/tmp
+/temp/
+
+# IDE
+.vscode/
+.idea/
