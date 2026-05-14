@@ -1,16 +1,21 @@
 <a id="readme-top"></a>
 
 <!-- SHIELDS -->
-
+---
+### Repository Informations
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stars][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![License][license-shield]][license-url]
+---
+### Personal Informations
 [![Linkedin][linkedin-shield]][linkedin-url]
 [![My profile][github-shield]][profile-url]
+---
 
 
+<!-- LINKS FOR SHIELDS -->
 [contributors-shield]: https://img.shields.io/github/contributors/zouzow/blueprint-gen?style=for-the-badge
 [contributors-url]: https://github.com/zouzow/blueprint-gen/graphs/contributors
 
@@ -30,4 +35,4 @@
 [linkedin-url]: https://www.linkedin.com/in/enzo-bermond-20429b398/
 
 [github-shield]: https://img.shields.io/badge/My%20profile-Github-181717?style=for-the-badge&logo=github&labelColor=blue
-[profile-url]: https://www.linkedin.com/in/enzo-bermond-20429b398/
+[profile-url]: https://github.com/Zouzow
