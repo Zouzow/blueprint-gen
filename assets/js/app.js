@@ -35,18 +35,23 @@ function start() {
 async function send_structure_tree(json_tree) {
   const promise = await fetch("./api/process.php", {
     method: 'POST',
-    body: 'json_tree'
+    headers: {'Content-Type' : 'application/json'},
+    body: json_tree
   });
   try {
-    const response = await promise.json();
+    const response = await promise;
+    if (response.ok) {
+      const data = await response.json();
+      // console.log("[DEBUG]", data);
+      if (data['success'] == true) {
+        console.log(data['data']);
+      }
+      else console.error("sucess = false");
+    } else {
+      console.log("error, response not ok");
+    }
   } catch (e) {
     console.error(e);
     return;
-  }
-
-  if (response.ok) {
-    console.log(response['data']);
-  } else {
-    console.log("erreur catch car response non ok")
   }
 }
