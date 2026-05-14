@@ -28,8 +28,9 @@ function browseTree($currentDepth, $path = "") {
     else $currentPath = $path . "/" . $key;
 
     if ($value === 'file') {
-      $commands[] =  "touch -p " . $currentPath;
-    } else {
+      $commands[] =  "touch " . $currentPath;
+      } else {
+        $commands[] = "mkdir -p " . $currentPath;
       $commands = array_merge($commands, browseTree($value, $currentPath));
     }
   }
