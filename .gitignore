@@ -9,3 +9,4 @@ config/database.php
 # IDE
 .vscode/
 .idea/
+.continue
